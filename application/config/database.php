@@ -75,12 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'mysql.coding.io',
-	'username' => 'user-KHGhAGxR7s',
-	'password' => 'e%F!)~necyfxeRb8dA`$',
-	'database' => 'db-FJWCPbrTbg',
+	'hostname' => '127.0.0.1',
+	'username' => 'root',
+	'password' => 'mnbvcxz@123',
+	'database' => 'quick_blog',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => 'qb_',
+	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
