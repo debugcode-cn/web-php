@@ -1,13 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Home extends MY_Controller{
-	
+
+class Home extends QB_Controller{
 	public function index(){
-		$this->load->view('home_message');
+		$this->render();
 	}
 
 	public function dbtest(){
-		echo $this->name;
 		$this->load->database();
 		var_dump($this->db) ;
 	}
