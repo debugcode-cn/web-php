@@ -1,0 +1,8 @@
+#!/bin/bash
+#[php]
+/etc/init.d/php7.0-fpm start
+#[mysql]
+/etc/init.d/mysql start
+#[nginx]
+#sudo nginx status
+nginx

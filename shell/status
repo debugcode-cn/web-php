@@ -1,5 +1,4 @@
-#!/usr/bin
-
+#!/bin/bash
 
 echo '=============== top ====================='
 #[php]
@@ -7,7 +6,7 @@ echo '=============== top ====================='
 # (start|stop|restart)
 echo '========================================='
 #[mysql]
-sudo service mysql status
+service mysql status
 echo '========================================='
 #[nginx]
 #sudo nginx status
