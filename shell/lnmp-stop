@@ -6,4 +6,6 @@ sudo /etc/init.d/php7.0-fpm stop
 sudo service mysql stop
 #[nginx]
 sudo kill -9 $(pidof nginx)
+#[mongodb]
+sudo kill -9 $(pidof mongodb)
 echo '=============done==========='

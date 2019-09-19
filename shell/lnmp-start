@@ -6,3 +6,5 @@
 #[nginx]
 #sudo nginx status
 nginx
+#[mongodb]
+service mongodb start

@@ -11,4 +11,7 @@ echo '========================================='
 #[nginx]
 #sudo nginx status
 ps -ef | grep nginx
+echo '========================================='
+#[mongodb]
+ps -ef | grep mongodb
 echo '=============== bottom =================='
