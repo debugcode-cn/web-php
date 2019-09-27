@@ -7,5 +7,5 @@ sudo service mysql stop
 #[nginx]
 sudo kill -9 $(pidof nginx)
 #[mongodb]
-sudo kill -9 $(pidof mongodb)
+sudo kill -9 $(pidof mongod)
 echo '=============done==========='
