@@ -11,4 +11,9 @@ class Home extends QB_Controller{
 		var_dump($this->db) ;
 	}
 	
+  public function insert(){
+    $this->load->database();
+    $this->load->model('user');
+    var_dump($this->User);
+  }
 }
