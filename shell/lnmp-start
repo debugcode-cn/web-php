@@ -8,3 +8,5 @@
 nginx
 #[mongodb]
 service mongodb start
+
+#mysql 启动失败解决1：查看datadir目录权限改为755 。
