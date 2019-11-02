@@ -8,4 +8,6 @@ sudo service mysql stop
 sudo kill -9 $(pidof nginx)
 #[mongodb]
 sudo kill -9 $(pidof mongod)
+#[redis]
+sudo kill -9 $(pidof redis-server)
 echo '=============done==========='
