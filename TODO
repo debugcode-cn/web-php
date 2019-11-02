@@ -3,4 +3,7 @@ Mon Sep 16 01:54:22 CST 2019
 2:添加mongodb支持  ---->  [ok]
 3:完成后台登陆注册
 4:完成本地mysql数据库部署 ---> [ok]
-5:添加mongodb数据库  ---->  [ok]  ---- 已经开启认证登录【已经添加的用户位于config/databases.php中】
+5:添加mongodb数据库  ---->  [ok]   ---- 已经开启认证登录【已经添加的用户位于config/databases.php中】  
+                                  ---- mongo 127.0.0.1/quick_blog -u quick_blog -p mnbvcxz@123
+6:添加redis-server  ---->  [ok]
+                         
