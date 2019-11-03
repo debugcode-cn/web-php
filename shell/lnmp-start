@@ -11,4 +11,4 @@ service mongodb start
 #[redis]
 redis-server &
 
-#mysql 启动失败解决1：查看datadir目录权限改为755 。
+#mysql 启动失败解决1：查看datadir目录权限改为755 。,包括内部文件，（为什么有时需要重新设置）
