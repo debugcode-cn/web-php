@@ -17,6 +17,7 @@ class User extends CI_Model {
         parent::__construct();
     }
 
+    //创建新的用户
     public function create($email,$password='123456'){
         if(empty($email)){
             return false;
