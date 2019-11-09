@@ -116,6 +116,27 @@ $db['mongodb'] = array(
 	'failover' => array(),
 	'save_queries' => FALSE
 );
+$db['mongodb'] = array(
+	'dsn'	=> '',
+	'hostname' => '127.0.0.1',
+	'username' => 'node_club',
+	'password' => 'mnbvcxz@123',
+	'database' => 'node_club',
+	'dbdriver' => '',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => FALSE
+);
 
 
 // 不受访问限制的超级用户
