@@ -19,17 +19,21 @@ class User extends CI_Model {
 
     //创建新的用户
     public function create($email,$password='123456'){
-        if(empty($email)){
-            return false;
-        }
-        $password = md5('quick_blog_'.md5($password));
-        $user = new self();
+      if(empty($email)){
+          return false;
+      }
+      if(!isset($this->db)){
+          //后期可以改成自动加载数据库设置
+          $this->load->database();
+      }
 
-        $user->password = $password;
-        $user->username = 'user_'.time();
-        $user->time_register = time();
-        $user->email = $email;
-        return $this->db->insert('user',$user);
+      $password = md5('quick_blog_'.md5($password));
+      $user = new self();
+      $user->password = $password;
+      $user->username = 'user_'.time();
+      $user->time_register = time();
+      $user->email = $email;
+      return $this->db->insert('user',$user);
     }
 
 }
