@@ -2,6 +2,6 @@
 class QBiz{
   private static $lang;
   public static function isLang($lang){
-    return  stripos();
+    return  stripos($this->lang,$lang) !== false;
   }
 }

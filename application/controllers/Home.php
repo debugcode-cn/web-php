@@ -2,8 +2,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends QB_Controller{
 	public function index(){
-		$this->render('common/header');
-    $this->render('common/footer');
+		$this->render('common/header');//todo 放到角落中去
+    $this->render();
+    $this->render('common/footer');//todo 放到角落中去
 	}
 
 	public function dbtest(){

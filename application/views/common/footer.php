@@ -1,5 +1,6 @@
-<?php
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-echo 'i am footer file.';
+<script type="text/javascript" src="<?=base_url()?>assets/js/base.js"></script>
+</body>
+</html>
 
-?>
