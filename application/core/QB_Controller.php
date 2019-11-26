@@ -16,7 +16,7 @@ class QB_Controller extends CI_Controller {
             $view_path = null;
         }
 
-        if(!empty($view_path) && "string" ==  gettype($view_path)){
+        if("string" ==  gettype($view_path)){
             $this->load->view($view_path, $data);
             return true;
         }

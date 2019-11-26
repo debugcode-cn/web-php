@@ -1,2 +1,1 @@
-
-console.log(document.elementNode)
+//todo 定义全局变量qb
