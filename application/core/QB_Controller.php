@@ -42,4 +42,11 @@ class QB_Controller extends CI_Controller {
         return $this->load->view($controller_view_name . DIRECTORY_SEPARATOR . $action_view_name, $data, true);
     }
 
+    //生成网址
+    public function url($controller,$function,$pararm=''){
+        $arr = array('c'=>$controller,'m'=>$function);
+        $url = site_url($arr).$pararm;
+        return $url;
+    }
+    
 }

@@ -1,8 +1,13 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
+<?php
+$url_in = site_url(array('c'=>'sign','m'=>'in','from'=>'in'));
+$url_up = site_url(array('c'=>'sign','m'=>'up','from'=>'up'));
+$url_forget = site_url(array('c'=>'sign','m'=>'forget','from'=>'forget'));
+?>
 <div class="dowebok" id="dowebok">
     <div class="form-container sign-up-container">
-        <form action="#">
+        <form action="<?=$url_up?>" method="post">
             <h1>注册</h1>
             <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -13,11 +18,11 @@
             <input type="text" placeholder="姓名">
             <input type="email" placeholder="电子邮箱">
             <input type="password" placeholder="密码">
-            <button>注册</button>
+            <button type="submit">注册</button>
         </form>
     </div>
     <div class="form-container sign-in-container">
-        <form action="#">
+        <form action="<?=$url_in?>" method="post">
             <h1>登录</h1>
             <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -27,8 +32,8 @@
             <span>或使用您的帐号</span>
             <input type="email" placeholder="电子邮箱">
             <input type="password" placeholder="密码">
-            <a href="#">忘记密码？</a>
-            <button>登录</button>
+            <a href="<?=$url_forget?>">忘记密码？</a>
+            <button type="submit">登录</button>
         </form>
     </div>
     <div class="overlay-container">

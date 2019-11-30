@@ -5,6 +5,7 @@ class Home extends QB_Controller{
     $args_header = array(
       'title'=>'home-index'
     );
+    
 		$this->render('common/header',$args_header);//todo 放到角落中去
     $this->render();
     $this->render('common/footer');//todo 放到角落中去
