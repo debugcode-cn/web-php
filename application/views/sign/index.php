@@ -4,35 +4,24 @@
 $url_in = site_url(array('c'=>'sign','m'=>'in','from'=>'in'));
 $url_up = site_url(array('c'=>'sign','m'=>'up','from'=>'up'));
 $url_forget = site_url(array('c'=>'sign','m'=>'forget','from'=>'forget'));
+
 ?>
+
 <div class="dowebok" id="dowebok">
     <div class="form-container sign-up-container">
         <form action="<?=$url_up?>" method="post">
             <h1>注册</h1>
-            <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <span>或使用邮箱注册</span>
-            <input type="text" placeholder="姓名">
-            <input type="email" placeholder="电子邮箱">
-            <input type="password" placeholder="密码">
+            <input name="nickname" type="text" placeholder="昵称">
+            <input name="email" type="email" placeholder="电子邮箱">
+            <input name="password" type="password" placeholder="密码">
             <button type="submit">注册</button>
         </form>
     </div>
     <div class="form-container sign-in-container">
         <form action="<?=$url_in?>" method="post">
             <h1>登录</h1>
-            <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <span>或使用您的帐号</span>
-            <input type="email" placeholder="电子邮箱">
-            <input type="password" placeholder="密码">
-            <a href="<?=$url_forget?>">忘记密码？</a>
+            <input name="email" type="email" placeholder="电子邮箱">
+            <input name="password" type="password" placeholder="密码">
             <button type="submit">登录</button>
         </form>
     </div>
