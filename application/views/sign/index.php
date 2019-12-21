@@ -11,7 +11,7 @@ $url_forget = site_url(array('c'=>'sign','m'=>'forget','from'=>'forget'));
     <div class="form-container sign-up-container">
         <form action="<?=$url_up?>" method="post">
             <h1>注册</h1>
-            <input name="nickname" type="text" placeholder="昵称">
+            <input name="nickname" type="hidden" placeholder="昵称">
             <input name="email" type="email" placeholder="电子邮箱">
             <input name="password" type="password" placeholder="密码">
             <button type="submit">注册</button>

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://botpgo-8080-mxppbk.access.myide.io/';
+$config['base_url'] = 'https://botpgo-80-zxeydu.access.myide.io/';
 
 /*
 |--------------------------------------------------------------------------

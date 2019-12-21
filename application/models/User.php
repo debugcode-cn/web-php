@@ -30,7 +30,8 @@ class User extends CI_Model {
         $user->username = 'user_'.time();
         $user->time_register = time();
         $user->email = $email;
-        return $this->db->insert('user',$user);
+        $this->db->insert('user',$user);
+        return $user_id = $this->db->insert_id();
     }
 
     //查询用户
@@ -48,4 +49,14 @@ class User extends CI_Model {
         return false;
     }
 
+    //判断邮箱账号是否存在
+    public function exist($email){
+        if(!isset($this->db)){
+            //后期可以改成自动加载数据库设置
+            $this->load->database();
+        }
+        $sql = "SELECT * FROM user WHERE email = ? limit 1";
+        $query = $this->db->query($sql, array($email));
+        return $query->num_rows() != 0;
+    }
 }
