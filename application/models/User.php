@@ -43,10 +43,14 @@ class User extends CI_Model {
         $password = md5('quick_blog_'.md5($password));
         $sql = "SELECT * FROM user WHERE password = ? AND email = ?";
         $query = $this->db->query($sql, array($password , $email));
-        if($query->num_rows() == 1){
-            return $query;
+        if($query->num_rows() == 0){
+            return false;
         }
-        return false;
+        $result = $query->result();
+        if(count($result) == 1){
+            return $result[0];
+        }
+        return $result;
     }
 
     //判断邮箱账号是否存在
