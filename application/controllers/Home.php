@@ -10,7 +10,7 @@ class Home extends QB_Controller{
     $this->render();
     $this->render('common/footer');//todo 放到角落中去
 	}
-
+ 
 	public function dbtest(){
 		$this->load->database();
 		var_dump($this->db) ;
