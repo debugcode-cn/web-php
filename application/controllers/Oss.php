@@ -1,6 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Rest extends QB_Controller{
+use OSS\OssClient;
+use OSS\Core\OssException;
+
+class Rest{
   public function restResult($reason='ok',$data=array(),$code=0){
     header("Content-Type:application/json;charset=utf-8");
     if(is_array($reason)){
@@ -19,6 +22,14 @@ class Rest extends QB_Controller{
     die($result);
   }
   public function index(){
+    phpinfo();
+    die;
+    $accessKeyId = 'LTAI4FfgQXESSAXX91SWZ9Jf';
+    $accessKeySecret = 'AfsuSUVSIXHP5MKdGWrsxZomeX1CGk';
+    $endpoint = 'https://oss-cn-hangzhou.aliyuncs.com';
+    $ossClient = new OssClient($accessKeyId, $accessKeySecret, $endpoint);
+    var_dump($ossClient);
+    die;
     $this->restResult('index');
 	}
 

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://botpgo-80-zbpbqb.access.myide.io/';
+$config['base_url'] = 'https://botpgo-80-icsufb.access.myide.io/';
 
 /*
 |--------------------------------------------------------------------------
@@ -136,7 +136,7 @@ $config['subclass_prefix'] = 'QB_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = TRUE;
+$config['composer_autoload'] = dirname(BASEPATH) . '/vendor/autoload.php' ;
 
 /*
 |--------------------------------------------------------------------------
