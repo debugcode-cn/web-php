@@ -1,15 +1,19 @@
 #!/bin/bash
 #[php]
 /etc/init.d/php7.0-fpm start
+echo 'php start ok========================='
 #[mysql]
 chmod -R 755 /var/lib/mysql
 /etc/init.d/mysql start
+echo 'mysql start ok========================='
 #[nginx]
 #sudo nginx status
 nginx
+echo 'nginx start ok========================='
 #[mongodb]
 service mongodb start
+echo 'mongodb start ok========================='
 #[redis]  127.0.0.1:6380
 redis-server /etc/redis/redis.conf &
-
+echo 'redis-server start ok========================='
 #mysql 启动失败解决1：查看datadir目录权限改为755 。,包括内部文件，（为什么有时需要重新设置）
