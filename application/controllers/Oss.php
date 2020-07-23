@@ -24,8 +24,8 @@ class Rest{
   public function index(){
     phpinfo();
     die;
-    $accessKeyId = 'LTAI4FfgQXESSAXX91SWZ9Jf';
-    $accessKeySecret = 'AfsuSUVSIXHP5MKdGWrsxZomeX1CGk';
+    $accessKeyId = 'your_access_key_id';
+    $accessKeySecret = 'your_access_key_secret';
     $endpoint = 'https://oss-cn-hangzhou.aliyuncs.com';
     $ossClient = new OssClient($accessKeyId, $accessKeySecret, $endpoint);
     var_dump($ossClient);
